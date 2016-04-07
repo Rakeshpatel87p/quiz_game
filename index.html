@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Damion' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,600' rel='stylesheet' type='text/css'>
     <title>Movie Quiz Game</title>
 </head>
 
@@ -13,23 +16,27 @@
     <div class="foreground">
     </div>
     <div class="test_items">
-        <hi class="question">Guess which character</hi>
+        <div class="question_item"><hi class="question">What Movie Featured Morgan Freeman, cast as the character, "Red"?</hi></div>
         <div class="container_CharacterPhoto">
-            <img src="images/shawshank.jpg" alt="">
+            <div class="freeman"><img src="images/shawshank.jpg" alt="question1"></div>
+            <div class="newton"><img src="images/newton.jpg" alt="question2"></div>
+            <div class="hayek"><img src="images/hayak.jpg" alt="question3"></div>
+            <div class="oyelowo"><img src="images/oyelowo.jpg" alt="question4"></div>
+            <div class="henson"><img src="images/henson.jpg" alt="question5"></div>
         </div>
         <div class="options">
-        	<ul class="choices">
-        		<li>A</li>
-        		<li>B</li>
-        		<li>C</li>
-        		<li>D</li>
-        	</ul>
+            <ul class="choices">
+                <li>Shawshank Redemption</li>
+                <li>The Dark Knight</li>
+                <li>Lean on Me</li>
+                <li>Se7en</li>
+            </ul>
         </div>
         <div class="navigateForward">
-        	<p>Next</p>
+            <i class="fa fa-angle-right fa-5x"></i>
         </div>
         <div class="navigateBack">
-        	<p>Previous</p>
+            <i class="fa fa-angle-left fa-5x"></i>
         </div>
     </div>
 </body>
