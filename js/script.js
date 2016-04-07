@@ -3,9 +3,7 @@ $(document).ready(function() {
 
     $(".navigateForward").click(function() {
         console.log("march forward!");
-        $("question_item").text("qcycle()");
-        $(".question_item").text("This actress starred opposite Terrence Howard in which 2006 Oscar-winning Best Picture?");
-
+        $("question_item").text(getQuestions());
     });
 
 })
@@ -15,17 +13,29 @@ $(document).ready(function() {
 
 // Need to create a class of events that plug into existing containers on the page
 
-var question = {
-    two: $(".question2").text(),
-    three: $(".question3").text(),
-    four: $(".question4").text(),
-    five: $(".question5").text(),
-    qcycle: function() {
-        for (var prop in question) {
-            return question(prop);
-        }
-    }
-};
+
+var questions = $(".question_item > p").toArray();
+
+function getQuestions(){
+	questions;
+	for (i=0; i<=questions.valueOf();i++){
+		return questions[i];
+		console.log("questions[i]")
+	}
+}
+
+// var question = new Array(); 
+//     two: $(".question2").text(),
+//     three: $(".question3").text(),
+//     four: $(".question4").text(),
+//     five: $(".question5").text(),
+//     qcycle: function() {
+//         for (var prop in question) {
+//             console.log(question[prop]);
+//             // console.log(question.size());
+//         }
+//     }
+// };
 
 var contents3 = {
 
