@@ -1,12 +1,20 @@
 var questions = $(".question_item > p").toArray();
 var images = $(".container_CharacterPhoto > div").toArray();
 var answers = $(".options > ul").toArray();
+var i = 0 
+
+function plus(){
+	i=0;
+	return i=i+1;
+};
+
 console.log(questions.length);
 
-function fill (){
-    for(i=0; i<=questions.length; i=i+1){
-    	return (questions[i]);
-    	console.log((questions[i]));
+
+function fill() {
+    for (i = 0; i <= questions.length; i = i + 1) {
+        return (questions[i]);
+        console.log((questions[i]));
     }
 
 
@@ -50,11 +58,12 @@ function fill (){
 
 $(document).ready(function() {
     console.log("working");
-
     $(".navigateForward").click(function() {
-        $(".question_item").children(fill()).show();
-        console.log(fill());
-        console.log("march forward!");
+            plus();
+            console.log(i);
+            $(".question_item").children(fill()).show();
+            console.log(fill());
+            console.log("march forward!");
     })
 
 });
