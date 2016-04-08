@@ -89,12 +89,12 @@ img {
 	border-radius:2em;
 }
 
-.choices {
+#answers {
 	list-style-type: none;
 	padding-left:0;
 }
 
-#answers2{
+.choices2{
 	display:none;
 }
 
