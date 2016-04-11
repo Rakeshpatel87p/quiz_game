@@ -47,9 +47,10 @@ img {
 .question_item {
 	width:56%;
 	margin:0 0 -2% 22%;
-	font-size:30px;
+	font-size:26px;
 }
 
+/*.question1,*/
 .question2,
 .question3,
 .question4,
@@ -72,8 +73,10 @@ img {
 
 img {
 	border:4px outset #ffcd00;
+
 }
 
+.freeman,
 .newton,
 .hayek,
 .oyelowo,
@@ -94,7 +97,11 @@ img {
 	padding-left:0;
 }
 
-.choices2{
+.choices1,
+.choices2,
+.choices3,
+.choices4,
+.choices5{
 	display:none;
 }
 
