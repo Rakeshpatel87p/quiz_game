@@ -20,9 +20,9 @@ $(document).ready(function() {
     console.log("working");
     $(".navigateForward").click(function() {
         if (i < 4) {
-            i += 1;
+            i++;
             content.fill();
-        } else if (i = 4) {
+        } else if (i == 4) {
             $(".end").show().text("You're Done! You got " + x + " out of 5 questions right.").siblings().hide();
             $(".playAgain").show();
             $(images[i]).hide();
@@ -38,10 +38,10 @@ $(document).ready(function() {
         console.log("working");
         $(this).closest("li").addClass("highlight").siblings().hide();
         if ($(this).is(".correct")) {
-            x += 1
+            x++
         };
         $(".navigateForward").show();
-        return (false);
+        return false;
         
     });
 
@@ -56,3 +56,6 @@ $(document).ready(function() {
     });
 
 });
+
+// Give comments to those reading the code
+// Better descriptive variables
