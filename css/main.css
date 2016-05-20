@@ -41,7 +41,7 @@ body {
 .question_item {
     width: 56%;
     margin: 0 0 -2% 22%;
-    font-size: 26px;
+    font-size: 1.3rem;
 }
 
 .question2,
@@ -54,25 +54,19 @@ body {
 }
 
 .playAgain {
-	border:1px solid black;
-	padding:1%;
+    border: 1px solid black;
+    padding: 1%;
 }
 
 .playAgain:hover {
-	cursor:pointer;
-	background-color:#ffcd00;
+    cursor: pointer;
+    background-color: #ffcd00;
 }
 
 .container_CharacterPhoto {
     max-width: 25%;
     max-height: 30%;
-    margin: 2% 0 1% 37%;
-    /*box-shadow: 0px 0px 20px #ffcd00;*/
-    /*Background image not properly appearing - why?*/
-    /*	background-image: url("../images/shawshank.jpg");
-	background-repeat:no-repeat;
-  	background-size:cover;*/
-    /*position:absolute;*/
+    margin: 3% 0 1% 37%;
 }
 
 img {
@@ -143,4 +137,37 @@ li:hover {
 
 .fa {
     color: green;
+}
+
+@media only screen and (max-width: 990px) {
+    .foreground {
+        padding-top:81%;
+    }    
+
+    .title {
+        font-size: 3em;
+    }
+    .test_items {
+        margin: -18% 0 0 11%;
+    }
+    
+    .question_item {
+            margin: -80% 0 3% 22%;
+    }
+
+    .freeman,
+    .newton,
+    .hayek,
+    .oyelowo,
+    .henson {
+        display: none !important;
+    }
+    li:hover {
+        font-size: 15px;
+    }
+
+    .navigateForward {
+        margin-top:0;
+        width:0;
+    }
 }
